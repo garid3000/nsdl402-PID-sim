@@ -33,7 +33,7 @@ motor_momentumInertia = 30
 
 
 
-wheel_angularVelocity = 0
+wheel_angularVelocity = 1
 motor_angularVelocity = 0
 
 relative_angularSpeed = wheel_angularVelocity - motor_angularVelocity
