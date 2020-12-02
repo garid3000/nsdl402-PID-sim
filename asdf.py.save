@@ -1,0 +1,15 @@
+from vpython import *
+import time
+import numpy as np
+obj = box(pos = vector(0,10,0), size = vector(  9, .1, obj = box(pos = vector(0,10,0), size = vector(  9, .1,  9))
+ 9))
+axisArrowX = arrow(pos = vector(0,0,0), axis = vector(15,0,0), shaftwidth = .1, color = vector(1,0,0))
+axisArrowY = arrow(pos = vector(0,0,0), axis = vector(0,15,0), shaftwidth = .1, color = vector(0,1,0))
+axisArrowZ = arrow(pos = vector(0,0,0), axis = vector(0,0,15), shaftwidth = .1, color = vector(0,0,1))
+
+ang = 0
+while 1:
+	obj.rotate(angle = 1*np.pi/180,  axis=vec(0,0,1), origin=vector(0,0,1000))
+	time.sleep(0.1)
+	ang += 1
+	print(ang)
